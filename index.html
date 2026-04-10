@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik Sehat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Klinik Sehat</h1>
+    </header>
+
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#form">Registrasi</a>
+    </nav>
+
+    <main>
+      <section id="beranda">
+        <h2>Selamat Datang</h2>
+        <p>
+          Klinik kesehatan kami terpercaya untuk keluarga Anda. Menyediakan pelayanan kesehatan
+          terdepan yang terintegrasi. Dengan dukungan tenaga medis profesional, adopsi teknologi
+          medis terkini, serta sistem informasi digital yang lebih efisien
+          <br />
+          <br />
+          Dengan sistem pelayanan yang cepat dan efisien, kami berkomitmen untuk membantu menjaga
+          kesehatan Anda setiap saat. Kesehatan Anda adalah prioritas utama kami, sehingga kami
+          selalu berusaha memberikan pelayanan terbaik.
+        </p>
+      </section>
+
+      <section id="layanan">
+        <h2>Layanan Kami</h2>
+        <div class="container">
+          <div class="card">Pelayanan Umum</div>
+          <div class="card">Kesehatan Ibu dan Anak</div>
+          <div class="card">Konsultasi Dokter</div>
+          <div class="card">Pemeriksaan Laboratorium</div>
+          <div class="card">Layanan Darurat</div>
+          <div class="card">Apotek</div>
+        </div>
+      </section>
+
+      <section id="form">
+        <h2>Registrasi Pasien</h2>
+
+        <form id="formPasien">
+          <input type="text" id="nama" placeholder="Nama" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <input type="number" id="umur" placeholder="Umur" required />
+
+          <label>Jenis Kelamin:</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="kelamin" value="Laki-laki" />
+              Laki-laki
+            </label>
+            <label>
+              <input type="radio" name="kelamin" value="Perempuan" />
+              Perempuan
+            </label>
+          </div>
+
+          <select id="layananSelect" required>
+            <option value="">Pilih Layanan</option>
+            <option>Pelayanan Umum</option>
+            <option>Kesehatan Ibu dan Anak</option>
+            <option>Konsultasi Dokter</option>
+            <option>Layanan Darurat</option>
+            <option>Apotek</option>
+          </select>
+
+          <button type="submit">Daftar</button>
+
+          <p class="error" id="errorMsg"></p>
+        </form>
+
+        <section>
+          <h2>Daftar Pasien</h2>
+          <ul id="listPasien"></ul>
+        </section>
+
+        <ul id="listPasien"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Klinik Sehat</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
